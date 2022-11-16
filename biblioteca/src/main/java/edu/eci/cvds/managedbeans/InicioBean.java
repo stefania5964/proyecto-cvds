@@ -12,7 +12,7 @@ import java.io.IOException;
 
 @ManagedBean(name = "InicioBean")
 @ApplicationScoped
-public class InicioBean extends pageBean{
+public class InicioBean {
     private String username;
     private String password;
     private String rol;

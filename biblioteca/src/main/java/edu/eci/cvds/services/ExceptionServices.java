@@ -6,6 +6,9 @@ public class ExceptionServices extends Exception {
     public ExceptionServices(String message) {
         super(message);
     }
+    public ExceptionServices(String message, Throwable cause) {
+        super(message, cause);
+    }
 
 
 }
