@@ -1,14 +1,14 @@
 package edu.eci.cvds.entities;
 
 public class Resource {
-    private Integer Codigo;
-    private String Tipo;
+    private Integer id_recurso;
+    private Integer Tipo;
     private String Ubicacion;
     private String Nombre;
     private String Estado;
     private Integer Capacidad;
-    public Resource(Integer codigo, String tipo, String ubicacion, String nombreRecurso, String estado, Integer capacidad) {
-        this.Codigo = codigo;
+    public Resource(Integer id_recurso, Integer tipo, String ubicacion, String nombreRecurso, String estado, Integer capacidad) {
+        this.id_recurso = id_recurso;
         this.Tipo = tipo;
         this.Ubicacion = ubicacion;
         this.Nombre = nombreRecurso;
@@ -19,10 +19,10 @@ public class Resource {
         return this;
     }
 
-    public Integer getCodigo() {
-        return Codigo;
+    public Integer getId_recurso() {
+        return id_recurso;
     }
-    public String getTipo() {
+    public Integer getTipo() {
         return Tipo;
     }
     public String getUbicacion() {
@@ -38,10 +38,10 @@ public class Resource {
         return Capacidad;
     }
 
-    public void setCodigo(Integer Codigo) {
-        this.Codigo = Codigo;
+    public void setId_recurso(Integer id_recurso) {
+        this.id_recurso = id_recurso;
     }
-    public void setTipo(String Tipo) {
+    public void setTipo(Integer Tipo) {
         this.Tipo = Tipo;
     }
     public void setUbicacion(String Ubicacion) {

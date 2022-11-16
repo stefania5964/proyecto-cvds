@@ -10,16 +10,28 @@ public class Reserve {
     private Time horaInicial;
     private Time horaFinal;
     private String periodicidad;
+    private String recursoS;
+    private String nombres;
+    private String apellidos;
     private Date fechaFinal;
     private String programa;
-    public Reserve(Integer recurso,Integer usuario, Time horaInicial, Time horaFinal, String periodicidad, Date fechaFinal, String programa) {
+    public Reserve(Integer recurso, Integer usuario, Time horaInicial, Time horaFinal, String periodicidad, Date fechaFinal) {
         this.recurso = recurso;
+        this.usuario = usuario;
         this.horaInicial = horaInicial;
         this.horaFinal = horaFinal;
-        this.usuario = usuario;
+        this.periodicidad = periodicidad;
+        this.fechaFinal = fechaFinal;
+    }
+    public Reserve(String recursoS, String nombres, String apellidos, Time horaInicial, Time horaFinal, String periodicidad, Date fechaFinal, String programa) {
+        this.horaInicial = horaInicial;
+        this.horaFinal = horaFinal;
         this.periodicidad = periodicidad;
         this.fechaFinal = fechaFinal;
         this.programa = programa;
+        this.recursoS = recursoS;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
     }
 
     public Reserve getReserve(){

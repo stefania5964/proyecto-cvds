@@ -1,0 +1,11 @@
+edu\eci\cvds\managedbeans\BuscarRecursoBean.class
+edu\eci\cvds\entities\Roles.class
+edu\eci\cvds\services\ExceptionServices.class
+edu\eci\cvds\persistence\ExceptionPersistence.class
+edu\eci\cvds\security\Inicio.class
+edu\eci\cvds\entities\TipoRecurso.class
+edu\eci\cvds\entities\Usuario.class
+edu\eci\cvds\entities\Reserve.class
+edu\eci\cvds\managedbeans\InicioBean.class
+edu\eci\cvds\entities\Resource.class
+edu\eci\cvds\managedbeans\pageBean.class
