@@ -1,5 +1,4 @@
 package edu.eci.cvds.services.impl;
-
 import com.google.inject.Inject;
 import edu.eci.cvds.entities.Resource;
 import edu.eci.cvds.persistence.DAOResource;
@@ -14,7 +13,7 @@ public abstract class ServiciosResourceImpl implements serviciosResource {
     private DAOResource daoResource;
 
     @Override
-    public List<Resource>  consultarResource(Integer id,String name ) throws ExceptionServices {
+    public List<Resource>  consultarResource(Integer id, String name) throws ExceptionServices {
         try {
             return daoResource.consultarResource(id,name );
         } catch (ExceptionPersistence ex) {

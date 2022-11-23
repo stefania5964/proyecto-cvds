@@ -2,11 +2,18 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:p="http://primefaces.org/ui">
 <h:head>
-    <title>Biblioteca</title>
+    <style>
+    body{
+        background-image: <img src="img/biblioteca.jpg">
+     }
+     .picture {
+            height: 100px;
+            width: auto;
+     }
 
-    <img class="picture"
-         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa.svg/1920px-Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa.svg.png"
-         />
+    </style>
+    <title>Biblioteca</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa.svg/1920px-Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa.svg.png" type="image/x-icon" />
 </h:head>
 <h:body>
     <h1>Inicio Sesión</h1>
@@ -21,8 +28,6 @@
                                  value="#{InicioBean.Contraseña}" />
                     <h:form id="form1">
                         <p:commandButton class="button" value="Ingresar" action="#{InicioBean.iniciar()}" />
-                        <p:commandButton value="Consultar recursos" class = "button" action="prueba?faces-redirect = true" style = "height:100%"/>
-                    </h:form>
                 </h:form>
             </div>
         </div>
