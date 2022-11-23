@@ -1,7 +1,7 @@
 package edu.eci.cvds.managedbeans;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
-
+import edu.eci.cvds.entities.*;
 import edu.eci.cvds.security.Inicio;
 import com.google.inject.Inject;
 import edu.eci.cvds.persistence.ExceptionPersistence;
@@ -15,7 +15,7 @@ import java.io.IOException;
 public class InicioBean {
     private String nombreUsuario;
     private String Contraseña;
-    private String roles;
+    private Roles roles;
     @Inject
     Inicio sessionLogger;
 
@@ -34,7 +34,7 @@ public class InicioBean {
     public String getnombreUsuario() {
         return nombreUsuario;
     }
-    public String getRoles() {
+    public Roles getRoles() {
         return roles;
     }
     public String getPassword() {
@@ -46,7 +46,7 @@ public class InicioBean {
     public void setPassword(String password) {
         this.Contraseña = Contraseña;
     }
-    public void setRoles(String roles) {
+    public void setRoles(Roles roles) {
         this.roles = roles;
     }
 

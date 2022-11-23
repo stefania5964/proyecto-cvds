@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:13:45 -0500] "GET / HTTP/1.1" 200 57 http-bio-8080-exec-1 930
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:13:45 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 5
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:14:10 -0500] "GET /ConsultarRecursosUsuarios.xhtml HTTP/1.1" 500 13879 http-bio-8080-exec-5 999
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:21:09 -0500] "GET / HTTP/1.1" 200 57 http-bio-8080-exec-7 1013
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:21:09 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-9 37
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:21:57 -0500] "GET /ConsultarRecursosUsuarios.xhtml HTTP/1.1" 500 13879 http-bio-8080-exec-2 795
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:25:18 -0500] "GET /ConsultarRecursosUsuarios.xhtml HTTP/1.1" 200 2086 http-bio-8080-exec-3 206
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:25:21 -0500] "POST /ConsultarRecursosUsuarios.xhtml HTTP/1.1" 200 219 http-bio-8080-exec-6 123
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:25:25 -0500] "POST /ConsultarRecursosUsuarios.xhtml HTTP/1.1" 200 222 http-bio-8080-exec-7 16
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:25:37 -0500] "POST /ConsultarRecursosUsuarios.xhtml HTTP/1.1" 200 221 http-bio-8080-exec-10 11
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:30:10 -0500] "GET /log.xhtml HTTP/1.1" 200 5652 http-bio-8080-exec-1 1492
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:31:19 -0500] "GET /ConsultarRecursosUsuarios.xhtml HTTP/1.1" 200 2086 http-bio-8080-exec-8 205
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:31:20 -0500] "POST /ConsultarRecursosUsuarios.xhtml HTTP/1.1" 200 220 http-bio-8080-exec-9 14
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:31:22 -0500] "POST /ConsultarRecursosUsuarios.xhtml HTTP/1.1" 200 221 http-bio-8080-exec-9 22
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:31:22 -0500] "POST /ConsultarRecursosUsuarios.xhtml HTTP/1.1" 200 221 http-bio-8080-exec-9 13
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:31:22 -0500] "POST /ConsultarRecursosUsuarios.xhtml HTTP/1.1" 200 221 http-bio-8080-exec-9 6
+0:0:0:0:0:0:0:1 - - [23/Nov/2022:18:31:22 -0500] "POST /ConsultarRecursosUsuarios.xhtml HTTP/1.1" 200 220 http-bio-8080-exec-9 5

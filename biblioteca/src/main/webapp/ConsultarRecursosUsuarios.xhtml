@@ -7,6 +7,8 @@
 <h:head>
     <title>Usuario Consultar Recursos</title>
 
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0" />
+
 
 </h:head>
 
@@ -17,55 +19,12 @@
             <img class="picture"
                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa.svg/1920px-Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa.svg.png">
             </img>
-            <p:commandButton value="Salir" actionListener="#{navegar.Inicio()}"
+            <p:commandButton value="Salir" action="#{navegar.Inicio()}"
                               />
         </div>
     </header>
     <br></br>
-    <h:form>
-        <p:menubar style="border: rgba(185, 185, 185, 0.315); background-color: rgba(205, 205, 205, 0.607);">
-            <p:menuitem value="Inicio" actionListener="#{BuscarRecursoBean.loadListResources()}"
-                        action="#{navegar.paginaUser()}" />
-            <p:menuitem value="Reservar Recurso" actionListener="#{BuscarRecursoBean.loadListResources()}"
-                        action="#{navegar.paginaReservas()}" />
-            <p:menuitem value="Consultar Reserva" actionListener="#{BuscarRecursoBean.loadListResources()}"
-                        action="#{navegar.paginaConsultaReserva()}" />
-        </p:menubar>
-        <br></br>
-    </h:form>
 
-    <h:form id="consultarRecurso">
-        <p:dataTable id="lista" var="Resource" value="#{BuscarRecursoBean.loadListResources()}"
-                     rowKey="#{Resource.codigo}" paginator="true" rows="20" emptyMessage="dada a la informacion dada no se encontro este recurso"
-                     >
-
-            <f:facet name="header">
-                <span>Recursos Disponibles</span>
-            </f:facet>
-
-            <p:column headerText="id_Recurso">
-                <h:outputText value="#{Resource.codigo}" />
-            </p:column>
-
-            <p:column headerText="Tipo" sortBy="#{Resource.tipo}" filterBy="#{Resource.tipo}">
-                <h:outputText value="#{Resource.tipo}" />
-            </p:column>
-
-            <p:column headerText="Localizado_En" sortBy="#{Resource.ubicacion}" filterBy="#{Resource.ubicacion}">
-                <h:outputText value="#{Resource.ubicacion}" />
-            </p:column>
-
-            <p:column headerText="Nombre" sortBy="#{Resource.nombre}" filterBy="#{Resource.nombre}">
-                <h:outputText value="#{Resource.nombre}" />
-            </p:column>
-
-            <p:column headerText="Capacidad" sortBy="#{Resource.capacidad}" filterBy="#{Resource.capacidad}">
-                <h:outputText value="#{Resource.capacidad}" />
-            </p:column>
-
-        </p:dataTable>
-
-    </h:form>
 </h:body>
 
 </html>

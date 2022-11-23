@@ -12,22 +12,22 @@ import javax.faces.context.FacesContext;
 
 public class navegar {
     public void Inicio() throws IOException {
-        FacesContext.getCurrentInstance().getExternalContext().redirect("/faces/inicioSesion.xhtml");
+        FacesContext.getCurrentInstance().getExternalContext().redirect("log.xhtml");
     }
     public void paginaUser() throws IOException {
-        FacesContext.getCurrentInstance().getExternalContext().redirect("/faces/paginaUser.xhtml");
+        FacesContext.getCurrentInstance().getExternalContext().redirect("paginaUser.xhtml");
     }
     public void paginaReservas() throws IOException {
-        FacesContext.getCurrentInstance().getExternalContext().redirect("/faces/Reservas.xhtml");
+        FacesContext.getCurrentInstance().getExternalContext().redirect("Reservas.xhtml");
     }
     public void paginaConsultaReserva() throws IOException {
-        FacesContext.getCurrentInstance().getExternalContext().redirect("/faces/consultarReserva.xhtml");
+        FacesContext.getCurrentInstance().getExternalContext().redirect("consultarReserva.xhtml");
     }
     public void Iniciar() throws IOException {
 
         if (Usuario.getRoles().equals(Roles.Administrador)) {
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/faces/paginaAdministrador.xhtml");}
+            FacesContext.getCurrentInstance().getExternalContext().redirect("paginaAdministrador.xhtml");}
         else if (Usuario.getRoles().equals(Roles.Usuario)){
-            FacesContext.getCurrentInstance().getExternalContext().redirect("/faces/paginaUser.xhtml");}
+            FacesContext.getCurrentInstance().getExternalContext().redirect("paginaUser.xhtml");}
     }
 }
