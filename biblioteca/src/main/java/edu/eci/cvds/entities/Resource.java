@@ -4,14 +4,12 @@ public class Resource {
     private Integer id_recurso;
     private TipoRecurso Tipo;
     private String Ubicacion;
-    private String Nombre;
     private String Estado;
     private Integer Capacidad;
-    public Resource(Integer id_recurso, TipoRecurso tipo, String ubicacion, String nombreRecurso, String estado, Integer capacidad) {
+    public Resource(Integer id_recurso, TipoRecurso tipo, String ubicacion, String estado, Integer capacidad) {
         this.id_recurso = id_recurso;
         this.Tipo = tipo;
         this.Ubicacion = ubicacion;
-        this.Nombre = nombreRecurso;
         this.Estado = estado;
         this.Capacidad = capacidad;
     }
@@ -28,9 +26,6 @@ public class Resource {
     public String getUbicacion() {
         return Ubicacion;
     }
-    public String getNombre() {
-        return Nombre;
-    }
     public String getEstado() {
         return Estado;
     }
@@ -46,9 +41,6 @@ public class Resource {
     }
     public void setUbicacion(String Ubicacion) {
         this.Ubicacion = Ubicacion;
-    }
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
     }
     public void setEstado(String Estado) {
         this.Estado = Estado;
