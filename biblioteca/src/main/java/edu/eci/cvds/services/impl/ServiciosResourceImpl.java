@@ -13,9 +13,9 @@ public abstract class ServiciosResourceImpl implements serviciosResource {
     private DAOResource daoResource;
 
     @Override
-    public List<Resource>  consultarResource(Integer id, String name) throws ExceptionServices {
+    public List<Resource>  consultarResource() throws ExceptionServices {
         try {
-            return daoResource.consultarResource(id,name );
+            return daoResource.consultarResource();
         } catch (ExceptionPersistence ex) {
             throw new ExceptionServices("Error de consulta:"+ ex.getLocalizedMessage(), ex);
         }

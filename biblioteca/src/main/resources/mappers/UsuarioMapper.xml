@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.eci.cvds.persistence.mybatisimpl.mappers.UsuarioMapper">
+
+    <insert parameterType="map" id="createUser">
+        insert into usuario (id, nombres, programa,rol)
+        values (#{Usuario.id}, #{Usuario.nombres}, #{Usuario.programa}, #{Usuario.rol})
+    </insert>
+
+    <select parameterType="map" id="getUser" resultType="Usuario">
+        select * from usuarios as u where u.correo = #{param1} and u.contrasena = #{param2}
+    </select>
+
+    <select parameterType="map" id="getU" resultType="Usuario">
+        select rol from usuarios where #{username} = correo
+
+    </select>
+
+    <resultMap type='Usuario' id='Usuarios'>
+        <result property='id' column='id_user'/>
+        <result property='nombre' column='nombres'/>
+        <result property='programa' column='programa'/>
+        <result property='roles' column='rol'/>
+        <result property='correo' column='correo'/>
+        <result property='contraseña' column='contrasena'/>
+    </resultMap>
+
+</mapper>

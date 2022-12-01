@@ -23,8 +23,8 @@ ALTER table TIPORECURSO ADD PRIMARY KEY (tipo);
 CREATE TABLE RECURSOS (
 	id_recursos INTEGER NOT NULL,
 	tipo VARCHAR(50) NOT NULL,
-	ubicacion VARCHAR(10) not null,
-	estado VARCHAR(8) not null,
+	ubicacion VARCHAR(20) not null,
+	estado VARCHAR(10) not null,
 	capacidad smallint not null
 );
 
@@ -50,7 +50,7 @@ CREATE TABLE RESERVAS (
 	usuario INTEGER not null,
 	horaInicial time not null,
 	horaFinal time not null,
-	periodicidad VARCHAR(17) NOT NULL,
+	periodicidad VARCHAR(20) NOT NULL,
 	fechaFinal date not NULL
 );
 ALTER table RESERVAS ADD PRIMARY KEY (codigo);
@@ -62,11 +62,11 @@ insert into tiporecurso values ('Sala_de_estudio');
 insert into tiporecurso values ('Computador');
 insert into tiporecurso values ('EquipoVisual');
 
-insert into reservas values (default,1,'david perez','7:00:00','9:00:00','2 horas','05-12-2022');
+--insert into reservas values (default,1,'david perez','7:00:00','9:00:00','2 horas','05-12-2022');
 
 
-insert into recursos values (default, 'Sala_de_estudio', 'Biblioteca satelite', 'Activo', 7);
-insert into recursos values (default, 'Computador', 'Biblioteca satelite', 'Activo', 1);
+--insert into recursos values (default, 'Sala_de_estudio', 'Biblioteca satelite', 'Activo', 7);
+--insert into recursos values (default, 'Computador', 'Biblioteca satelite', 'Activo', 1);
 
 insert into roles values ('Administrador');
 insert into roles values ('Usuario');

@@ -2,7 +2,6 @@ package edu.eci.cvds.managedbeans;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import edu.eci.cvds.entities.*;
-import edu.eci.cvds.security.Inicio;
 import com.google.inject.Inject;
 import edu.eci.cvds.persistence.ExceptionPersistence;
 import edu.eci.cvds.services.ExceptionServices;
@@ -17,17 +16,17 @@ public class InicioBean {
     private String Contraseña;
     private Roles roles;
     @Inject
-    Inicio sessionLogger;
+    navegar sessionLogger;
 
 
     @RequiresGuest
-    public void iniciar() throws ExceptionPersistence, IOException, ExceptionServices {
+    public void iniciar() throws IOException {
 
         try {
 
-            sessionLogger.inicio(nombreUsuario, Contraseña);
+            sessionLogger.inicion(nombreUsuario, Contraseña);
 
-        } catch (ExceptionServices | IOException e){
+        } catch (IOException e){
             throw e;
         }
     }

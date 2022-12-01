@@ -12,8 +12,10 @@ A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\ja
 A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\DAOResource.java
 A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\entities\TipoRecurso.java
 A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\ExceptionPersistence.java
+A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\mybatisimpl\mappers\UsuarioMapper.java
 A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\mybatisimpl\mappers\ResourceMapper.java
 A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\services\ExceptionServices.java
 A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\managedbeans\usuarioBean.java
 A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\mybatisimpl\MyBatisDAOResource.java
 A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\services\serviciosResource.java
+A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\Report.java
