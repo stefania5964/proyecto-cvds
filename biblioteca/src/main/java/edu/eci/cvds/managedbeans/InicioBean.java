@@ -3,6 +3,8 @@ import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import edu.eci.cvds.entities.*;
 import com.google.inject.Inject;
+
+import edu.eci.cvds.security.login;
 import edu.eci.cvds.persistence.ExceptionPersistence;
 import edu.eci.cvds.services.ExceptionServices;
 import org.apache.shiro.authz.annotation.RequiresGuest;
@@ -16,17 +18,17 @@ public class InicioBean {
     private String Contraseña;
     private Roles roles;
     @Inject
-    navegar sessionLogger;
+    login sessionLogger;
 
 
     @RequiresGuest
-    public void iniciar() throws IOException {
+    public void iniciar() throws IOException, ExceptionServices {
 
         try {
 
-            sessionLogger.inicion(nombreUsuario, Contraseña);
+            sessionLogger.paginaUser(nombreUsuario, Contraseña);
 
-        } catch (IOException e){
+        } catch (IOException | ExceptionServices e){
             throw e;
         }
     }

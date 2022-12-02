@@ -1,6 +1,5 @@
 edu\eci\cvds\managedbeans\usuarioBean.class
 edu\eci\cvds\entities\Roles.class
-edu\eci\cvds\security\Inicio.class
 edu\eci\cvds\entities\TipoRecurso.class
 edu\eci\cvds\services\ServiceResourceFactory.class
 edu\eci\cvds\persistence\ExceptionPersistence.class
