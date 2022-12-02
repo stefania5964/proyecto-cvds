@@ -21,7 +21,7 @@ public class session implements login{
         this.userServices = userServices;
     }
 
-    public void login(String correo, String contrasena) throws ExceptionServices, IOException {
+    public void paginaUser(String correo, String contrasena) throws ExceptionServices, IOException {
         Usuario usuario = userServices.getUser(correo, contrasena);
         if(usuario != null){
             if(usuario.getRoles().equals("admin")){
@@ -34,10 +34,7 @@ public class session implements login{
         }
     }
 
-    @Override
-    public void paginaUser(String correo, String contrasena) throws ExceptionServices, IOException {
 
-    }
 
     @Override
     public boolean isLogged() {
