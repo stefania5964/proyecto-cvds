@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.eci.cvds.persistence.mybatisimpl.mappers.ResourceMapper">
+
+    <insert id="createResource" parameterType="map">
+        insert into recursos (id_recurso, tipo , ubicacion, estado, capacidad)
+        values (#{resource.id_recurso} #{resource.tipo}, #{resource.ubicacion}, #{resource.estado}, #{resource.capacidad})
+    </insert>
+
+
+    <update id="updateResource" parameterType="map">
+        update recursos set estado = #{resource.estado}
+        <where>
+            <if test="id_recursos != null">
+                and id_recursos = #{resource.id_recursos}
+            </if>
+        </where>
+    </update>
+
+    <resultMap type="Resource" id="ResourceResult">
+        <id property="id_recursos" column="id_recursos"/>
+        <result property="tipo" column="tiporecurso"/>
+        <result property="ubicacion" column="ubicacion"/>
+        <result property="estado" column="estado"/>
+        <result property="capacidad" column="capacidad"/>
+    </resultMap>
+
+
+
+</mapper>

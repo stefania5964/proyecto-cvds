@@ -6,7 +6,7 @@
       xmlns:p="http://primefaces.org/ui">
 <h:head>
     <meta charset="UTF-8" />
-    <title>login</title>
+    <title>Biblioteca</title>
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
     <link rel = "icon" href ="https://observatics.edu.co/wp-content/uploads/sites/20/2019/06/Logo-Escuela-ingenier%C3%ADa.png"/>
@@ -94,7 +94,7 @@
     </header>
     <h:form class="formulario">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa.svg/1280px-Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa.svg.png" />
-        <h1>Recursos Biblioteca</h1>
+        <h1>Inicio Sesión</h1>
         <div class="contenedor">
             <div class="input-contenedor">
                 <i class="fas fa-envelope icon"></i>
@@ -104,7 +104,7 @@
                 <i class="fas fa-key icon"></i>
                 <p:inputText type="password" placeholder="Contraseña" required="true" />
             </div>
-            <p:commandButton class="button" value="Login" action="recursos?servlet-redirect = true" />
+            <p:commandButton class="button" value="LOGIN" action="#{InicioBean.iniciar()}" />
             <p>Recuerda Devolver los Recursos en el plazo establecido.</p>
         </div>
     </h:form>

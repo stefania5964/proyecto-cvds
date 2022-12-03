@@ -1,10 +1,11 @@
 package edu.eci.cvds.managedbeans;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
-
+import edu.eci.cvds.entities.*;
 import com.google.inject.Inject;
+
+import edu.eci.cvds.security.login;
 import edu.eci.cvds.persistence.ExceptionPersistence;
-import edu.eci.cvds.security.Inicio;
 import edu.eci.cvds.services.ExceptionServices;
 import org.apache.shiro.authz.annotation.RequiresGuest;
 
@@ -13,41 +14,41 @@ import java.io.IOException;
 @ManagedBean(name = "InicioBean")
 @ApplicationScoped
 public class InicioBean {
-    private String username;
-    private String password;
-    private String rol;
+    private String nombreUsuario;
+    private String Contraseña;
+    private Roles roles;
     @Inject
-    Inicio sessionLogger;
+    login sessionLogger;
 
 
     @RequiresGuest
-    public void login() throws ExceptionPersistence, IOException, ExceptionServices {
+    public void iniciar() throws IOException, ExceptionServices {
 
         try {
 
-            sessionLogger.inicio(username, password);
+            sessionLogger.paginaUser(nombreUsuario, Contraseña);
 
-        } catch (ExceptionServices | IOException e){
+        } catch (IOException | ExceptionServices e){
             throw e;
         }
     }
-    public String getUsername() {
-        return username;
+    public String getnombreUsuario() {
+        return nombreUsuario;
     }
-    public String getRol() {
-        return rol;
+    public Roles getRoles() {
+        return roles;
     }
     public String getPassword() {
-        return password;
+        return Contraseña;
     }
-    public void setUsername(String username) {
-        this.username = username;
+    public void setnombreUsuario(String nombreUsuario) {
+        this.nombreUsuario = nombreUsuario;
     }
     public void setPassword(String password) {
-        this.password = password;
+        this.Contraseña = Contraseña;
     }
-    public void setRol(String rol) {
-        this.rol = rol;
+    public void setRoles(Roles roles) {
+        this.roles = roles;
     }
 
 

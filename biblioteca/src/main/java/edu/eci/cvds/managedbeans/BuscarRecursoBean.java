@@ -1,26 +1,29 @@
 package edu.eci.cvds.managedbeans;
-import edu.eci.cvds.entities.Resource;
-import edu.eci.cvds.entities.TipoRecurso;
-import edu.eci.cvds.services.ServiceResourceFactory;
-
-import javax.faces.bean.SessionScoped;
+import edu.eci.cvds.entities.*;
+import edu.eci.cvds.services.serviciosResource;
 import javax.inject.Inject;
+import javax.faces.bean.RequestScoped;
 import javax.faces.bean.ManagedBean;
-import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+
 @ManagedBean(name = "BuscarRecursoBean")
-@SessionScoped
-public class BuscarRecursoBean {
+
+public class BuscarRecursoBean extends PageBean {
+    @Inject
+    private serviciosResource serviciosResource;
     TipoRecurso tipoRecurso;
-    List<Resource> BuscarRecurso;
-    public void obtenerRecurso(Integer id_recurso,String Nombre){
+    List<Resource> consultarResource;
+    public List<Resource> consultarResource() throws Exception {
         try {
-            BuscarRecurso = ServiceResourceFactory.getInstance().getForumsServices().consultarResource(id_recurso,Nombre);
-        } catch (Exception e){
-            e.printStackTrace();
+            return serviciosResource.consultarResource();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return null;
         }
+    }
+    public TipoRecurso getTipoRecurso() {
+        return tipoRecurso;
     }
 
 }

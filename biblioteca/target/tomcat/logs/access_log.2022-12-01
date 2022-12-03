@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:29:03 -0500] "GET / HTTP/1.1" 200 84 http-bio-8080-exec-1 3866
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:29:03 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 5
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:29:15 -0500] "GET /log.xhtml HTTP/1.1" 200 5651 http-bio-8080-exec-5 666
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:29:15 -0500] "GET /javax.faces.resource/theme.css.xhtml?ln=primefaces-saga&v=11.0.0 HTTP/1.1" 304 - http-bio-8080-exec-7 8
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:29:15 -0500] "GET /javax.faces.resource/primeicons/primeicons.css.xhtml?ln=primefaces&v=11.0.0 HTTP/1.1" 304 - http-bio-8080-exec-6 5
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:29:15 -0500] "GET /javax.faces.resource/components.css.xhtml?ln=primefaces&v=11.0.0 HTTP/1.1" 304 - http-bio-8080-exec-8 5
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:29:15 -0500] "GET /javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces&v=11.0.0 HTTP/1.1" 304 - http-bio-8080-exec-9 5
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:29:15 -0500] "GET /javax.faces.resource/core.js.xhtml?ln=primefaces&v=11.0.0 HTTP/1.1" 304 - http-bio-8080-exec-9 4
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:29:15 -0500] "GET /javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces&v=11.0.0 HTTP/1.1" 304 - http-bio-8080-exec-1 6
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:29:15 -0500] "GET /javax.faces.resource/components.js.xhtml?ln=primefaces&v=11.0.0 HTTP/1.1" 304 - http-bio-8080-exec-10 19
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:32:35 -0500] "POST /log.xhtml HTTP/1.1" 200 261 http-bio-8080-exec-7 694
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:32:36 -0500] "POST /log.xhtml HTTP/1.1" 200 261 http-bio-8080-exec-8 60
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:32:39 -0500] "POST /log.xhtml HTTP/1.1" 200 261 http-bio-8080-exec-8 79
+0:0:0:0:0:0:0:1 - - [01/Dec/2022:18:32:47 -0500] "POST /log.xhtml HTTP/1.1" 200 261 http-bio-8080-exec-2 65
