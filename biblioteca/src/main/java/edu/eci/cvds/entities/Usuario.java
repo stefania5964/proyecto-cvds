@@ -7,12 +7,12 @@ public class Usuario {
     private static Roles roles;
     private String correo;
     private String contraseña;
-    public Usuario(int id, String nombre, String programa, String roles, String correo, String contraseña) {
+    public Usuario(int id, String nombre, String programa, Roles roles, String correo, String contraseña) {
         this.id = id;
         this.nombre = nombre;
         this.programa = programa;
         this.correo = correo;
-        this.roles = Roles.valueOf(roles);
+        this.roles = Roles.valueOf(String.valueOf(roles));
         this.contraseña = contraseña;
     }
 
@@ -24,6 +24,8 @@ public class Usuario {
         return id;
     }
     public String getNombre() {return nombre;}
+
+    public Roles getRol() {return roles;}
     public String getPrograma() {
         return programa;
     }

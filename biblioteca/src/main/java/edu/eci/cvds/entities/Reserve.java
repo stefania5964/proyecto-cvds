@@ -22,6 +22,7 @@ public class Reserve {
         this.horaFinal = horaFinal;
         this.periodicidad = periodicidad;
         this.fechaFinal = fechaFinal;
+        this.codigo = codigo;
     }
     public Reserve(Integer codigo,String recursoS, String nombres, String apellidos, Time horaInicial, Time horaFinal, String periodicidad, Date fechaFinal, String programa) {
         this.horaInicial = horaInicial;
@@ -32,6 +33,7 @@ public class Reserve {
         this.recursoS = recursoS;
         this.nombres = nombres;
         this.apellidos = apellidos;
+        this.codigo = codigo;
     }
 
     public Reserve getReserve(){
