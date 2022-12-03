@@ -11,6 +11,11 @@ public class usuarioBean extends PageBean {
     private serviciosResource serviciosResource;
     @Inject
     private login session;
+
+    public usuarioBean(login session) {
+        this.session = session;
+    }
+
     public Usuario loadUser() throws Exception {
         try {
             return serviciosResource.getUser();

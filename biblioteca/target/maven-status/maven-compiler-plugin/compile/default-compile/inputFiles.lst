@@ -1,20 +1,23 @@
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\entities\Resource.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\entities\Usuario.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\services\ServiceResourceFactory.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\managedbeans\BuscarRecursoBean.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\entities\Roles.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\services\impl\ServiciosResourceImpl.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\entities\Reserve.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\managedbeans\navegar.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\managedbeans\PageBean.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\managedbeans\InicioBean.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\DAOResource.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\entities\TipoRecurso.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\ExceptionPersistence.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\mybatisimpl\mappers\UsuarioMapper.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\mybatisimpl\mappers\ResourceMapper.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\services\ExceptionServices.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\managedbeans\usuarioBean.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\mybatisimpl\MyBatisDAOResource.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\services\serviciosResource.java
-A:\Documentos\7 semestre\CVDS\proyecto-cvds\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\Report.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\managedbeans\PageBean.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\security\login.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\entities\Usuario.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\entities\TipoRecurso.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\managedbeans\BuscarRecursoBean.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\services\ServiceResourceFactory.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\services\serviciosResource.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\UsuarioDAO.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\services\ExceptionServices.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\Report.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\entities\Roles.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\mybatisimpl\MyBatisDAOResource.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\managedbeans\navegar.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\mybatisimpl\mappers\UsuarioMapper.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\entities\Resource.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\entities\Reserve.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\managedbeans\session.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\managedbeans\InicioBean.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\DAOResource.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\ExceptionPersistence.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\persistence\mybatisimpl\mappers\ResourceMapper.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\services\impl\ServiciosResourceImpl.java
+C:\Users\stefania.giraldo\Documents\proyecto-cvds\biblioteca\src\main\java\edu\eci\cvds\managedbeans\usuarioBean.java

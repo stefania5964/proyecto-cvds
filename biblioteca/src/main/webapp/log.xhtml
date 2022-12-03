@@ -94,7 +94,7 @@
     </header>
     <h:form class="formulario">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa.svg/1280px-Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa.svg.png" />
-        <h1>Inicio Sesión</h1>
+        <h1>Inicio Sesion</h1>
         <div class="contenedor">
             <div class="input-contenedor">
                 <i class="fas fa-envelope icon"></i>
@@ -104,7 +104,10 @@
                 <i class="fas fa-key icon"></i>
                 <p:inputText type="password" placeholder="Contraseña" required="true" />
             </div>
-            <p:commandButton class="button" value="LOGIN" action="#{InicioBean.iniciar()}" />
+            <p>
+                <h:commandButton value="LOGIN" action="paginaUser.xhtml?faces-redirect=true" />
+            </p>
+
             <p>Recuerda Devolver los Recursos en el plazo establecido.</p>
         </div>
     </h:form>

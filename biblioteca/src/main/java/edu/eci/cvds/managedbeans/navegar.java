@@ -17,7 +17,7 @@ public class navegar {
     public void consultar_recurso() throws IOException {
         FacesContext.getCurrentInstance().getExternalContext().redirect("ConsultarRecursosUsuarios.xhtml");
     }
-    public void paginaUser(String nombre, String Contraseña) throws IOException {
+    public void paginaUser() throws IOException {
         FacesContext.getCurrentInstance().getExternalContext().redirect("paginaUser.xhtml");
     }
     public void paginaReservas() throws IOException {
